@@ -1,0 +1,1496 @@
+version = "3"
+
+plugin_manager
+{
+	load_plugin
+	{
+		enabled = "true"
+		name = "Clipper"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			AlignTolerance = "0.1"
+			ClipPlanes = "Clipper::PlaneRecordType#Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0;Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0;Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0;Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0;Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0;Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0;Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0;Enabled#false,Show#false,Flip#false,Translate#0 0 0,Rotate#0 0 0"
+			CullingEnabled = "false"
+			PlaneOffset = "0 0 -0.5"
+			PlaneRotate = "0 0 0"
+			PlaneSize = "0.4"
+			PlaneStripes = "31"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "GLSLShader"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			FragmetShaderFile = ""
+			VertexShaderFile = ""
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "IgesC3dImportPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Import Brep = "true"
+			Tessellation chord error = "0.2"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "Import3DMPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			TextureFolder = ""
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "Import3DXMLPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			LODError = "10"
+			LODs = "false"
+			Optimize = "false"
+			ProcessTransforms = "false"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportBrepOCCPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Accurate LOD pixels = "500"
+			AngularDeflection = "0.5"
+			Color = "0.8 0.8 0.8 1"
+			Coloring = "true"
+			ComputeLODs = "false"
+			IsInParallel = "false"
+			LinearDeflection = "0.1"
+			LinearDeflectionRelative = "true"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportDGNPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			EnableLineWidth = "false"
+			ExportToSTL = "false"
+			MaxDevForBoundary = "0.1"
+			MaxDevForCircle = "0.1"
+			MaxDevForCurve = "0.1"
+			MaxDevForFacet = "0.1"
+			MaxDevForIsoline = "0.1"
+			MergeGeometry = "true"
+			RenderMode = "3"
+			ViewMask = "1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportDWGPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			EnableLineWidth = "false"
+			EnableTransparency = "true"
+			ExportToSTL = "false"
+			LightPalette = "false"
+			MaxDevForBoundary = "0.1"
+			MaxDevForCircle = "0.1"
+			MaxDevForCurve = "0.1"
+			MaxDevForFacet = "0.1"
+			MaxDevForIsoline = "0.1"
+			RenderMode = "ImportDWGPlugin::RenderModeEnumType#FlatShaded#3"
+			circle = "true"
+			circular_arc = "true"
+			ellipsArc = "true"
+			mesh = "true"
+			nurbs = "true"
+			polygon = "true"
+			polyline = "false"
+			polypoint = "false"
+			rasterImage = "true"
+			ray = "true"
+			scene offset (x) = "0"
+			scene offset (y) = "0"
+			scene offset (z) = "0"
+			shape = "true"
+			shell = "true"
+			switchToModelSpace = "true"
+			text = "false"
+			xline = "false"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportFBXPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			ImportingAnimation = "true"
+			ImportingCameras = "true"
+			ImportingLights = "true"
+			Normalized coordinates = "false"
+			TransformHardware = "false"
+			offset (x) = "0"
+			offset (y) = "0"
+			offset (z) = "0"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportGltfPlugin_New"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Color = "0.8 0.8 0.8 1"
+			DiffuseFactor = "0.3"
+			SkyBox = "ImportGltfPlugin_New::CubeMapEnumType#City#0"
+			SpecularFactor = "0.3"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportIfcPPPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			HandleLayerAssignments = "true"
+			HandleStyledItems = "true"
+			IgnoreProfileRadius = "false"
+			MinCreaseAngle = "0.15708"
+			MinNumVerticesPerArc = "6"
+			NumVerticesPerCircle = "14"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportIgesOCCPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Accurate LOD pixels = "500"
+			AngularDeflection = "0.5"
+			Color = "0.8 0.8 0.8 1"
+			Coloring = "true"
+			ComputeLODs = "false"
+			IsInParallel = "false"
+			LinearDeflection = "0.1"
+			LinearDeflectionRelative = "true"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportJsonPlugin"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			DefaultFontColor = "0.8 0.8 0.8 1"
+			FontName = "arial.ttf"
+			FontSize = "30"
+			FontVsNodesScale = "0.5"
+			MinimalTextSizeToDraw = "30"
+			NodesScale = "1"
+			Scale = "100"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportPCLPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			ColorHigh = "1 1 1 1"
+			ColorLow = "0 0 0 1"
+			RGB color  = "true"
+			Ratio Output = "1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportPDFPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			ExportTextures = "false"
+			GeometryOnEachFace = "false"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportSATPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			EnableLineWidth = "false"
+			EnableTransparency = "false"
+			ExportToSTL = "false"
+			MaxDevForBoundary = "0.1"
+			MaxDevForCircle = "0.1"
+			MaxDevForCurve = "0.1"
+			MaxDevForFacet = "0.1"
+			MaxDevForIsoline = "0.1"
+			RenderMode = "3"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ImportU3DPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			ExportTextures = "false"
+			GeometryOnEachFace = "false"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "InstrumentsView"
+		tag = ""
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "JtImportPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Import Brep = "true"
+			Import User Data = "false"
+			Tessellation chord error = "0.2"
+			Wire frame = "false"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "LightSource"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Ambient = "0.2 0.2 0.2 1"
+			Diffuse = "1 1 1 1"
+			Direction = "0 0 -1"
+			Specular = "1 1 1 1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "MultiImportPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Import Brep = "true"
+			Tessellation chord error = "0.2"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ObjectLibrary"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			SaveData = "TYPE:CATALOG|CHILDS:()|"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ObjectLibraryView"
+		tag = ""
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "PaintingTool"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			Data = ""
+			DataVersion = "1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "Plane"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			CreateByTriangles = "true"
+			DiffuseColor = "1 0 0 1"
+			EnableLighting = "true"
+			Length = "1"
+			Rotate = "0 0 0"
+			Scale = "1 1 1"
+			TextureScale = "1 1 1"
+			Translate = "0 0 0"
+			Transparency = "1"
+			Width = "1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "RangeMeter"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			Data = ""
+			DataVersion = "2"
+			PointSize = "0.02"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "SceneInteractor"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			AdhereAngleThreshold = "10"
+			AdherePositionThreshold = "0.05"
+			AdhereToInitialPosition = "true"
+			EnableHandCollisions = "false"
+			EnableMovingObjectsCollisions = "false"
+			HideInfoManually = "true"
+			HighlightTransparency = "1.2461e-306"
+			NoteData = ""
+			SelectObjectButton = "-1"
+			ShowCollisions = "false"
+			ShowDraggingMarks = "false"
+			UnselectAllButton = "-1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "SceneTreeView"
+		tag = ""
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "ShadowedScene"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			AmbientBias = "0.1 1"
+			Bias = "-1"
+			JitteringScale = "32"
+			MaxFarDistance = "200"
+			ShadowMapResolution = "1024"
+			SoftShadow = "false"
+			SoftnessWidth = "0.001"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "SoundSystem"
+		property = "vrc::IBasePlugin::PluginParameters"
+		property = "vrc::IBasePlugin::PluginLocalParameters"
+		tag = ""
+
+		config
+		{
+			PlaySoundOnServer = "true"
+			Volume = "1"
+		}
+
+		local_config
+		{
+			HumanInputTag = ""
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "Sphere"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			DiffuseColor = "1 0 0 1"
+			DoubleSided = "true"
+			EnableLighting = "true"
+			Radius = "1"
+			Rotate = "0 0 0"
+			Scale = "1 1 1"
+			Translate = "0 0 0"
+			Transparency = "1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "StandardOsgDaeLoader"
+		tag = ""
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "StandardOsgLoader"
+		tag = ""
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "StepC3dImportPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Import Brep = "true"
+			Tessellation chord error = "0.2"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "TeleportMarks"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			Data = ""
+			DataVersion = "1"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "Texture"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			LoadTexture = ""
+			ShaderUniformName = ""
+			TextureFile = ""
+			Unit = "0"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "TransformNode"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			AttachmentModelName = ""
+			AttachmentNodeName = ""
+			HumanInputTag = ""
+			NodeAttachment = "TransformNode::AttachmentEnumType#NO_ATTACHMENT#0"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "UiManager"
+		property = "vrc::IBasePlugin::PluginParameters"
+		tag = ""
+
+		config
+		{
+			InitXmlFile = "vrcUiAppearance.xml"
+		}
+	}
+
+	load_plugin
+	{
+		enabled = "true"
+		name = "VrmlImportPlugin"
+		property = "vrc::ISceneNodePlugin::DefaultParameters"
+		tag = ""
+
+		default_scene_node_config
+		{
+			Import Brep = "true"
+		}
+	}
+}
+
+scene_manager
+{
+	node
+	{
+		plugin = "StandardOsgLoader"
+		property = "vrc::TransformProperty"
+		property = "vrc::ModelLoaderProperty"
+		property = "vrc::ShowHideProperty"
+
+		model_loader
+		{
+			EnableBlending = "false"
+			EnableLODs = "false"
+			ForceNoBackfaceCulling = "false"
+			ForceNormalizeNormals = "true"
+			ModelName = "ObjectLibraryCachedModels"
+			Rotate = "0 0 0"
+			Scale = "1 1 1"
+			Translate = "0 0 0"
+		}
+
+		node
+		{
+			cached_model_guid = "4FA037F11CEAED4FBB4B255E54FA39A0"
+			file = "D:/Useful/VR Concept/data/models/instruments/klu4.FBX"
+			property = "vrc::TransformProperty"
+			property = "vrc::ISceneNode::PluginParameters"
+			property = "vrc::ModelLoaderProperty"
+			property = "vrc::ShowHideProperty"
+
+			model_loader
+			{
+				EnableBlending = "false"
+				EnableLODs = "false"
+				ForceNoBackfaceCulling = "false"
+				ForceNormalizeNormals = "true"
+				ModelName = "klu4"
+				Rotate = "0 0 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+
+			parameters
+			{
+				ImportingAnimation = "true"
+				ImportingCameras = "true"
+				ImportingLights = "true"
+				Normalized coordinates = "false"
+				TransformHardware = "false"
+				offset (x) = "0"
+				offset (y) = "0"
+				offset (z) = "0"
+			}
+
+			show_hide
+			{
+				InitStatus = "2"
+				Status = "2"
+			}
+
+			transform
+			{
+				ForceNormalizeNormals = "true"
+				InitMatrix = "-4.37114e-08 0 -1 0 0 1 0 0 1 0 -4.37114e-08 0 0 0 0 1"
+				Rotate = "0 90 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+		}
+
+		node
+		{
+			cached_model_guid = "0BCC324536F01C448261FB2F3C439EB7"
+			file = "D:/Useful/VR Concept/data/models/instruments/otvertka_krestovaya.FBX"
+			property = "vrc::TransformProperty"
+			property = "vrc::ISceneNode::PluginParameters"
+			property = "vrc::ModelLoaderProperty"
+			property = "vrc::ShowHideProperty"
+
+			model_loader
+			{
+				EnableBlending = "false"
+				EnableLODs = "false"
+				ForceNoBackfaceCulling = "false"
+				ForceNormalizeNormals = "true"
+				ModelName = "otvertka_krestovaya"
+				Rotate = "0 0 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+
+			parameters
+			{
+				ImportingAnimation = "true"
+				ImportingCameras = "true"
+				ImportingLights = "true"
+				Normalized coordinates = "false"
+				TransformHardware = "false"
+				offset (x) = "0"
+				offset (y) = "0"
+				offset (z) = "0"
+			}
+
+			show_hide
+			{
+				InitStatus = "2"
+				Status = "2"
+			}
+
+			transform
+			{
+				ForceNormalizeNormals = "true"
+				InitMatrix = "-4.37114e-08 0 -1 0 0 1 0 0 1 0 -4.37114e-08 0 0 0 0 1"
+				Rotate = "0 90 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+		}
+
+		node
+		{
+			cached_model_guid = "4C59B3A85454B54DBEA12AD9C336C317"
+			file = "D:/Useful/VR Concept/data/models/instruments/otvertka_pryamaya.FBX"
+			property = "vrc::TransformProperty"
+			property = "vrc::ISceneNode::PluginParameters"
+			property = "vrc::ModelLoaderProperty"
+			property = "vrc::ShowHideProperty"
+
+			model_loader
+			{
+				EnableBlending = "false"
+				EnableLODs = "false"
+				ForceNoBackfaceCulling = "false"
+				ForceNormalizeNormals = "true"
+				ModelName = "otvertka_pryamaya"
+				Rotate = "0 0 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+
+			parameters
+			{
+				ImportingAnimation = "true"
+				ImportingCameras = "true"
+				ImportingLights = "true"
+				Normalized coordinates = "false"
+				TransformHardware = "false"
+				offset (x) = "0"
+				offset (y) = "0"
+				offset (z) = "0"
+			}
+
+			show_hide
+			{
+				InitStatus = "2"
+				Status = "2"
+			}
+
+			transform
+			{
+				ForceNormalizeNormals = "true"
+				InitMatrix = "-4.37114e-08 0 -1 0 0 1 0 0 1 0 -4.37114e-08 0 0 0 0 1"
+				Rotate = "0 90 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+		}
+
+		node
+		{
+			cached_model_guid = "D5D6E898AE89AE48A30F5E8AD5695E3F"
+			file = "D:/Useful/VR Concept/data/models/instruments/treshetka.FBX"
+			property = "vrc::TransformProperty"
+			property = "vrc::ISceneNode::PluginParameters"
+			property = "vrc::ModelLoaderProperty"
+			property = "vrc::AnimationProperty"
+			property = "vrc::ShowHideProperty"
+
+			animation
+			{
+				Durations = "3.33333"
+				Names = "Take 001"
+				SourceNames = ";"
+				StartTimes = "0"
+			}
+
+			model_loader
+			{
+				EnableBlending = "false"
+				EnableLODs = "false"
+				ForceNoBackfaceCulling = "false"
+				ForceNormalizeNormals = "true"
+				ModelName = "treshetka"
+				Rotate = "0 0 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+
+			parameters
+			{
+				ImportingAnimation = "true"
+				ImportingCameras = "true"
+				ImportingLights = "true"
+				Normalized coordinates = "false"
+				TransformHardware = "false"
+				offset (x) = "0"
+				offset (y) = "0"
+				offset (z) = "0"
+			}
+
+			show_hide
+			{
+				InitStatus = "2"
+				Status = "2"
+			}
+
+			transform
+			{
+				ForceNormalizeNormals = "true"
+				InitMatrix = "-4.37114e-08 0 -1 0 0 1 0 0 1 0 -4.37114e-08 0 0 0 0 1"
+				Rotate = "0 90 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+		}
+
+		show_hide
+		{
+			InitStatus = "2"
+			Status = "2"
+		}
+
+		transform
+		{
+			ForceNormalizeNormals = "true"
+			InitMatrix = "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"
+			Rotate = "0 0 0"
+			Scale = "1 1 1"
+			Translate = "0 0 0"
+		}
+	}
+
+	node
+	{
+		plugin = "Texture"
+		property = "vrc::TransformProperty"
+		property = "vrc::ISceneNode::PluginParameters"
+		property = "vrc::UserDataProperty"
+		property = "vrc::UnmovableProperty"
+		property = "vrc::ClippingControlProperty"
+
+		clipping_control
+		{
+			InitStatus = "2"
+			Status = "2"
+		}
+
+		node
+		{
+			plugin = "Plane"
+			property = "vrc::TransformProperty"
+			property = "vrc::ISceneNode::PluginParameters"
+			property = "vrc::UserDataProperty"
+			property = "vrc::UnmovableProperty"
+
+			parameters
+			{
+				CreateByTriangles = "true"
+				DiffuseColor = "1 1 1 1"
+				EnableLighting = "false"
+				Length = "1"
+				Rotate = "0 0 0"
+				Scale = "50 50 50"
+				TextureScale = "0.05 0.05 0.05"
+				Translate = "0 0 0"
+				Transparency = "1"
+				Width = "1"
+			}
+
+			transform
+			{
+				ForceNormalizeNormals = "true"
+				InitMatrix = "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"
+				Rotate = "0 0 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+
+			unmovable
+			{
+				AdhereTag = ""
+				GroupName = ""
+				Overridable = "true"
+			}
+
+			user_data
+			{
+				Preset = "true"
+			}
+		}
+
+		parameters
+		{
+			LoadTexture = ""
+			ShaderUniformName = ""
+			TextureFile = "../data/environment/concrete.jpg"
+			Unit = "0"
+		}
+
+		transform
+		{
+			ForceNormalizeNormals = "true"
+			InitMatrix = "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"
+			Rotate = "0 0 0"
+			Scale = "1 1 1"
+			Translate = "0 0 0"
+		}
+
+		unmovable
+		{
+			AdhereTag = ""
+			GroupName = ""
+			Overridable = "true"
+		}
+
+		user_data
+		{
+			Preset = "true"
+		}
+	}
+
+	node
+	{
+		plugin = "Texture"
+		property = "vrc::TransformProperty"
+		property = "vrc::ISceneNode::PluginParameters"
+		property = "vrc::UserDataProperty"
+		property = "vrc::UnmovableProperty"
+		property = "vrc::ClippingControlProperty"
+
+		clipping_control
+		{
+			InitStatus = "2"
+			Status = "2"
+		}
+
+		node
+		{
+			plugin = "Sphere"
+			property = "vrc::TransformProperty"
+			property = "vrc::ISceneNode::PluginParameters"
+			property = "vrc::UserDataProperty"
+			property = "vrc::UnmovableProperty"
+
+			parameters
+			{
+				DiffuseColor = "1 1 1 1"
+				DoubleSided = "true"
+				EnableLighting = "false"
+				Radius = "500"
+				Rotate = "0 0 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+				Transparency = "1"
+			}
+
+			transform
+			{
+				ForceNormalizeNormals = "true"
+				InitMatrix = "1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1"
+				Rotate = "0 0 0"
+				Scale = "1 1 1"
+				Translate = "0 0 0"
+			}
+
+			unmovable
+			{
+				AdhereTag = ""
+				GroupName = ""
+				Overridable = "true"
+			}
+
+			user_data
+			{
+				Preset = "true"
+			}
+		}
+
+		parameters
+		{
+			LoadTexture = ""
+			ShaderUniformName = ""
+			TextureFile = "../data/environment/shop.jpg"
+			Unit = "0"
+		}
+
+		transform
+		{
+			ForceNormalizeNormals = "true"
+			InitMatrix = "1 0 -0 0 -0 -4.37114e-08 -1 0 0 1 -4.37114e-08 0 0 0 0 1"
+			Rotate = "-90 0 0"
+			Scale = "1 1 1"
+			Translate = "0 0 0"
+		}
+
+		unmovable
+		{
+			AdhereTag = ""
+			GroupName = ""
+			Overridable = "true"
+		}
+
+		user_data
+		{
+			Preset = "true"
+		}
+	}
+
+	node
+	{
+		cached_model_guid = "6C39880EA1DF1E418C3C5037D39B30EE"
+		file = "D:/Ganjur/Учёба/Настольный токарный станок по металлу taig micro lathe ii 3D-модель/Настольный токарный станок по металлу taig micro lathe ii 3D-модель.step"
+		property = "vrc::TransformProperty"
+		property = "vrc::ISceneNode::PluginParameters"
+		property = "vrc::ModelLoaderProperty"
+
+		model_loader
+		{
+			EnableBlending = "false"
+			EnableLODs = "false"
+			ForceNoBackfaceCulling = "false"
+			ForceNormalizeNormals = "true"
+			ModelName = "Настольный токарный станок по металлу taig micro lathe ii 3D-модель"
+			Rotate = "90 0 0"
+			Scale = "0.01 0.01 0.01"
+			Translate = "0 0 0"
+		}
+
+		object_modifier
+		{
+			path = "1 2 244 245 343 344 348 349"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Chuck Face (1)"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "0 1 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "0 9.525 -1"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.372549 1 0.145098 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.372549 1 0.145098 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 244 245 343 344 345 346"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Backing Plate (1)"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "0 1 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "-1 7.525 0.18966"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.372549 1 0.145098 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.372549 1 0.145098 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 63 64 95 96 100 101"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "X Handwheel"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "1 0 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "55.372 155.264 -4.76437"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.137255 1 0.137255 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.137255 1 0.137255 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 63 64 141 142"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Crosslide Handwheel"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "1 0 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "0.01929 -141 32"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.317647 1 0.215686 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.317647 1 0.215686 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 63 64 145 146"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Handwheel Handle (1)"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "1 0 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "0.01929 -131 23"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.317647 1 0.215686 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.317647 1 0.215686 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 63 64 148 149"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Handwheel Screw"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "0 0 1"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "0.01929 0 6"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.317647 1 0.215686 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.317647 1 0.215686 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 63 64 95 96 97 98"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Handwheel Handle"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "1 0 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "55.372 149.264 10.2356"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.137255 1 0.137255 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.137255 1 0.137255 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 183 184 203 204"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Center Point"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "0 -1 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "40.9452 -6.20168 40.1555"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.0509804 0.2 0.0235294 1"
+				Diffuse = "0.207843 1 0.152941 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.0509804 0.2 0.0235294 1"
+				InitDiffuse = "0.207843 1 0.152941 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "1"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "1"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 244 245 343 344 366 367"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Chuck Jaw (1)"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "0 1 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "121.053 2.525 -0.81034"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.372549 1 0.145098 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.372549 1 0.145098 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 244 245 343 344 363 364"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Chuck Jaw (1)"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "0 1 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "121.053 9.525 -0.81034"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.372549 1 0.145098 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.372549 1 0.145098 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		object_modifier
+		{
+			path = "1 2 244 245 343 344 360 361"
+			property = "vrc::MaterialProperty"
+			property = "vrc::AxisRotationProperty"
+			subtree_name = "Chuck Jaw (1)"
+
+			axis_rotation
+			{
+				AdhereTag = ""
+				Axis = "0 1 0"
+				GroupName = ""
+				LimitRotation = "false"
+				MaxAngle = "180"
+				MinAngle = "-180"
+				Origin = "121.053 9.525 0.18966"
+				OriginAtObjectCenter = "false"
+				Overridable = "true"
+			}
+
+			material
+			{
+				Ambient = "0.2 0.2 0.2 1"
+				Diffuse = "0.372549 1 0.145098 1"
+				Emission = "0 0 0 1"
+				InitAmbient = "0.2 0.2 0.2 1"
+				InitDiffuse = "0.372549 1 0.145098 1"
+				InitEmission = "0 0 0 1"
+				InitShininess = "0"
+				InitSpecular = "0 0 0 1"
+				InitTransparency = "0.8"
+				Shininess = "0"
+				Specular = "0 0 0 1"
+				Transparency = "0.8"
+			}
+		}
+
+		parameters
+		{
+			Import Brep = "true"
+			Tessellation chord error = "0.2"
+		}
+
+		transform
+		{
+			ForceNormalizeNormals = "true"
+			InitMatrix = "1 0 0 0 0 1 0 0 0 0 1 0 0 0.4 0 1"
+			Rotate = "0 0 0"
+			Scale = "1 1 1"
+			Translate = "0 0.4 0"
+		}
+	}
+}
